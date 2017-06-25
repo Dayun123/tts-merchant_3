@@ -1,15 +1,6 @@
 Commit message
 
-Generate product, category, and brand scaffolds and place them under the admin namespace.
+Create navbar.
 
-Edit routes.rb to scope to the admin namespace so that we can keep our URL and Path helpers.
-
-Preface product, category, and brand controllers with Admin::
-
-Create controllers/admin directory and put product, category, and brand controllers within it to get proper scoping.
-
-Create views/admin directory and put product, category, and brand view folders within it.
-
-Create root route to admin/products#index
-
-Run migrations for product, category, and brand
+Add _navbar.html.erb partial to layouts folder.
+Create links to products, categories, and brands index pages in navbar.
