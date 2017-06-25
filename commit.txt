@@ -1,6 +1,11 @@
 Commit message
 
-Create navbar.
+Paperclip setup.
 
-Add _navbar.html.erb partial to layouts folder.
-Create links to products, categories, and brands index pages in navbar.
+Add a Paperclip avatar to products table with rails g migration Product avatar.
+Whitelist :avatar in the Products controller.
+Add Paperclip methods has_attached_file and validates_content_type to Product model, adjusted to serve from the asset pipeline instead of public.
+Add a file upload input to the product form partial.
+Add image_tag that shows the product avatar to views/admin/products/show.html.erb
+
+Add irbtools to Gemfile.
