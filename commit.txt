@@ -1,11 +1,5 @@
 Commit message
 
-Paperclip setup.
-
-Add a Paperclip avatar to products table with rails g migration Product avatar.
-Whitelist :avatar in the Products controller.
-Add Paperclip methods has_attached_file and validates_content_type to Product model, adjusted to serve from the asset pipeline instead of public.
-Add a file upload input to the product form partial.
-Add image_tag that shows the product avatar to views/admin/products/show.html.erb
-
-Add irbtools to Gemfile.
+Change displayed avatar to medium in product/show.html.erb.
+Display category and brand name in product/index and product/show views, was showing the hex code of the object before.
+Add number_to_currency for product.price field in product/index and product/show views.
