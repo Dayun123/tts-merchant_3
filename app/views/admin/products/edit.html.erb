@@ -1,5 +1,10 @@
 <h1>Editing Product</h1>
 
+<%# Checks if the product has an associated avatar. If it does, display the medium version of that avatar.  %>
+<% if @product.avatar.exists? %>
+  <%= image_tag @product.avatar.url(:medium) %>
+<% end -%>
+
 <%= render 'form', product: @product %>
 
 <%= link_to 'Show', @product %> |

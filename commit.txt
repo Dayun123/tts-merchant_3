@@ -1,5 +1,3 @@
 Commit message
 
-Change displayed avatar to medium in product/show.html.erb.
-Display category and brand name in product/index and product/show views, was showing the hex code of the object before.
-Add number_to_currency for product.price field in product/index and product/show views.
+Add a conditional to views/admin/products/edit.html.erb which checks to see if the current product has an avatar and if so, displays it.
