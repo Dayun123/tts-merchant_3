@@ -1,23 +1,15 @@
 Commit message
 
-Add gems.
+Generate product, category, and brand scaffolds and place them under the admin namespace.
 
-paperclip for handling file uploads.
-  - Modified config/environments/development.rb with Paperclip statement to find ImageMagick
-bootstrap-sass for styling.
-  - Change name of app/assets/stylesheets/application.css to application.css.scss so can use Sass preprocessor
-  - Add @import statements for bootstrap stylesheets, removed require statements per bootstrap-sass Gems's suggestions.
-  - Modify application.js to require jquery and bootstrap-sprockets
-Use yarn to add jquery to app (for bootstrap use)
-font-awesome-rails for cool fonts.
-  - Add import statement to application.css.scss to import font-awesome styles.
-stamp for better date/time formatting.
-simple-form for better forms.
-  - Run rails generate simple-form:install --bootstrap to get simple-form installed in the application.
-annotate to get db schema printed in models and other places.
-devise for user login and authentication
-  - run rails generate devise:install
-    - add default_url options in config/environments/development.rb
-    - add a TODO in routes.rb for setting up a root route
-    - copy the devise default views for later customization by running rails g devise:views
-will-paginate for easy pagination in views.
+Edit routes.rb to scope to the admin namespace so that we can keep our URL and Path helpers.
+
+Preface product, category, and brand controllers with Admin::
+
+Create controllers/admin directory and put product, category, and brand controllers within it to get proper scoping.
+
+Create views/admin directory and put product, category, and brand view folders within it.
+
+Create root route to admin/products#index
+
+Run migrations for product, category, and brand
