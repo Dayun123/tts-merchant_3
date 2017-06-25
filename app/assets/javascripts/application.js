@@ -10,6 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// Note from bootstrap-sass gem: Require Bootstrap Javascripts in app/assets/javascripts/application.js:
+//
+//= require jquery
+//= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .

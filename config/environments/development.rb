@@ -31,6 +31,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # Devise settings
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
@@ -51,4 +54,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Paperclip config, so it can find ImageMagick on disk, the path /usr/bin/convert was found by running which convert at the command line.
+  Paperclip.options[:command_path] = "/usr/bin/convert/"
 end
