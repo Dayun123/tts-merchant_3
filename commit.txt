@@ -1,7 +1,8 @@
 Commit message
 
-Add validations for Product, Quantity, and Cateogry models.
+Add validations for Product, Quantity, and Category models.
 
-Add validations on Category for name.
-  - Presence, uniqueness.
-  - TODO: Add uniqueness constraint to DB.
+Create and run migration to add an index on name in the Category
+table and make the name unique.
+Remove TODO from Category model.
+

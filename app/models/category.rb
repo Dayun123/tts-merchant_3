@@ -1,6 +1,5 @@
 class Category < ApplicationRecord
 
-# TODO: Make sure Category is unique in DB as well
 validates :name, presence: true, uniqueness: true
 
 end
@@ -13,4 +12,8 @@ end
 #  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_categories_on_name  (name) UNIQUE
 #
