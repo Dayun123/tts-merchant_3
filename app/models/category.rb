@@ -1,4 +1,8 @@
 class Category < ApplicationRecord
+
+# TODO: Make sure Category is unique in DB as well
+validates :name, presence: true, uniqueness: true
+
 end
 
 # == Schema Information

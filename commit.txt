@@ -1,3 +1,7 @@
 Commit message
 
-Add a conditional to views/admin/products/edit.html.erb which checks to see if the current product has an avatar and if so, displays it.
+Add validations for Product, Quantity, and Cateogry models.
+
+Add validations on Category for name.
+  - Presence, uniqueness.
+  - TODO: Add uniqueness constraint to DB.
