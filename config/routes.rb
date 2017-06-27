@@ -7,6 +7,5 @@ Rails.application.routes.draw do
     resources :categories
   end
 
-  # TODO: Define a root url per Devise instructions
   root 'admin/products#index'
 end
