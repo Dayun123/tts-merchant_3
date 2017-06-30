@@ -1,7 +1,6 @@
 Commit message
 
-Add validations and associations to Category and Brand models.
+Add validations to Product model.
 
-- Add has_many associations to Category and Brand.
-- Add uniqueness validations to Brand model and Brand DB table.
-  - Refine uniqueness of name of Brand and Category to be case-sensitive.
+- Validate presence of name, description, quantity, and price.
+- Validate numericality of quantity and price, set acceptable min values and numeric types for each.
