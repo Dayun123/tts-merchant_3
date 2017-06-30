@@ -1,8 +1,7 @@
 Commit message
 
-Add validations for Product, Quantity, and Category models.
+Add validations and associations to Category and Brand models.
 
-Create and run migration to add an index on name in the Category
-table and make the name unique.
-Remove TODO from Category model.
-
+- Add has_many associations to Category and Brand.
+- Add uniqueness validations to Brand model and Brand DB table.
+  - Refine uniqueness of name of Brand and Category to be case-sensitive.
