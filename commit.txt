@@ -1,7 +1,6 @@
 Commit message
 
-Add validations for Product, Quantity, and Cateogry models.
+Add validations to Product model.
 
-Add validations on Category for name.
-  - Presence, uniqueness.
-  - TODO: Add uniqueness constraint to DB.
+- Validate presence of name, description, quantity, and price.
+- Validate numericality of quantity and price, set acceptable min values and numeric types for each.
