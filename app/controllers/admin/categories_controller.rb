@@ -1,4 +1,7 @@
 class Admin::CategoriesController < ApplicationController
+
+  # If the user is not logged in, they can only see the index and show views
+  before_action :authenticate_user!, except: [ :index, :show ]
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 
   # GET /categories
