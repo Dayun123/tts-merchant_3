@@ -12,7 +12,7 @@ end
 #
 #  id                  :integer          not null, primary key
 #  name                :string
-#  price               :decimal(, )
+#  price               :decimal(8, 2)
 #  quantity            :integer
 #  description         :text
 #  category_id         :integer
