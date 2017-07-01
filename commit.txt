@@ -1,3 +1,0 @@
-Commit message
-
-Add some shit to the navbar that allows users to sign-in/register.
