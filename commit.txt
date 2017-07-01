@@ -1,15 +1,3 @@
 Commit message
 
-Devise setup.
-
-- Add TODO in config/production for Devise mailer.
-- Add a Devise User model.
-- Add authenticate_user! calls to Products, Categories,
-and Brands controllers to ensure that non logged-in users
-can only see the index and show actions.
-
-Efficient DB Queries.
-
-- Change Product loading from Product.all to
-Product.includes(:brand, :category).all so that the associations
-are loaded along with all the Products.
+Add some shit to the navbar that allows users to sign-in/register.
