@@ -1,10 +1,14 @@
 class Admin::ProductsController < ApplicationController
+
+  # Require the user to be logged in for all actions except index and show.
+  before_action :authenticate_user!, except: [ :index, :show ]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+
 
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.includes(:brand, :category).all
   end
 
   # GET /products/1

@@ -1,4 +1,7 @@
 class Admin::BrandsController < ApplicationController
+
+  # Non logged-in users can only see the index and show pages
+  before_action :authenticate_user!, except: [ :index, :show ]
   before_action :set_brand, only: [:show, :edit, :update, :destroy]
 
   # GET /brands

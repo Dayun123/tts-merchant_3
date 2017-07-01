@@ -1,10 +1,15 @@
 Commit message
 
-Seed the DB.
+Devise setup.
 
-- Create a rake task to seed the DB with products, brands, and categories from Faker.
-  - Create a pics folder in app's home directory to store downloaded images.
-- Add Faker gem for seeding DB with random data.
-- Add link to homepage on 'Brand' in navbar.
-- Add some Bootstrap styles to products/show and wrap the application layout in a container.
+- Add TODO in config/production for Devise mailer.
+- Add a Devise User model.
+- Add authenticate_user! calls to Products, Categories,
+and Brands controllers to ensure that non logged-in users
+can only see the index and show actions.
 
+Efficient DB Queries.
+
+- Change Product loading from Product.all to
+Product.includes(:brand, :category).all so that the associations
+are loaded along with all the Products.
