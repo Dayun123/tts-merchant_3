@@ -1,6 +1,10 @@
 Commit message
 
-Add validations to Product model.
+Seed the DB.
 
-- Validate presence of name, description, quantity, and price.
-- Validate numericality of quantity and price, set acceptable min values and numeric types for each.
+- Create a rake task to seed the DB with products, brands, and categories from Faker.
+  - Create a pics folder in app's home directory to store downloaded images.
+- Add Faker gem for seeding DB with random data.
+- Add link to homepage on 'Brand' in navbar.
+- Add some Bootstrap styles to products/show and wrap the application layout in a container.
+
